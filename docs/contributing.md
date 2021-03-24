@@ -12,10 +12,13 @@ There are many ways you can contribute to the project:
 ## Reporting Bugs or Other Issues
 
 Found something that HTTPX should support?
-Stumbled upon some unexpected behavior?
+Stumbled upon some unexpected behaviour?
 
-Feel free to open an issue at the
-[issue tracker](https://github.com/encode/httpx/issues).
+Contributions should generally start out with [a discussion](https://github.com/encode/httpx/discussions).
+Possible bugs may be raised as a "Potential Issue" discussion, feature requests may
+be raised as an "Ideas" discussion. We can then determine if the discussion needs
+to be escalated into an "Issue" or not, or if we'd consider a pull request.
+
 Try to be more descriptive as you can and in case of a bug report,
 provide as much information as possible like:
 
@@ -24,6 +27,15 @@ provide as much information as possible like:
 - Installed dependencies and versions (`python -m pip freeze`)
 - Code snippet
 - Error traceback
+
+You should always try to reduce any examples to the *simplest possible case*
+that demonstrates the issue.
+
+Some possibly useful tips for narrowing down potential issues...
+
+- Does the issue exist on HTTP/1.1, or HTTP/2, or both?
+- Does the issue exist with `Client`, `AsyncClient`, or both?
+- When using `AsyncClient` does the issue exist when using `asyncio` or `trio`, or both?
 
 ## Development
 
